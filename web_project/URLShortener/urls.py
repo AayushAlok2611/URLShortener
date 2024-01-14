@@ -2,5 +2,6 @@ from django.urls import path
 from URLShortener import views
 
 urlpatterns = [
-    path("", views.home),
+    path("test", views.test_route),
+    path("shorten_url",views.shorten_url)
 ]
