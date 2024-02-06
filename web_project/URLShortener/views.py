@@ -28,7 +28,7 @@ def shorten_url(request):
     # Doing this just to prove that for each type of HTTP request , data sent int the body , is present in request.body
     if request.method == 'GET':
         body = json.loads(request.body)
-        url = body.get["url"]
+        url = body["url"]
         shortening_strategy = body.get("shortening_strategy", None)
         
     if request.method == 'POST':
